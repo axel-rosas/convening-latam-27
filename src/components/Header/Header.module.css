@@ -1,0 +1,21 @@
+.divider {
+  width: 100vw;
+  height: 64px;
+  border-top: 20px solid #c3b4ff;
+  background-image: url("../../assets/images/decorative/divider-3.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 100%;
+}
+.navigation {
+  background: #ffcb57;
+}
+.nav__item {
+  text-decoration: none;
+  color: #4d3971;
+  font-weight: 500;
+  transition: color ease-in-out 0.2s;
+}
+.nav__item:hover {
+  color: #00a4a4;
+}
