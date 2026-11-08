@@ -1,5 +1,7 @@
 .header {
   position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
   height: auto;
 }
 .borderTop {
@@ -8,7 +10,7 @@
   background: #c2b5ff;
 }
 .divider {
-  width: 100vw;
+  width: 100%;
   height: 54px;
   background: url("../../assets/images/decorative/divider-1.png") repeat-x left
     center scroll;

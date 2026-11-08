@@ -21,6 +21,16 @@
   border-radius: 0 12px 12px 12px;
 }
 
+.tableScroll {
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+
+.tableScroll:focus-visible {
+  outline: 3px solid #4d3971;
+  outline-offset: -3px;
+}
+
 /* Tabla */
 .pricingTable {
   width: 100%;

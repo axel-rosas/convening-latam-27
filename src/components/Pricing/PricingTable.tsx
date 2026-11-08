@@ -11,7 +11,12 @@ const PricingTable = ({ group }: PricingTableProps) => {
       <h3 id={`pricing-${group.id}-title`} className={styles.pricingTitle}>{group.title}</h3>
 
       <div className={styles.tableWrapper}>
-        <div className="table-responsive">
+        <div
+          className={`table-responsive ${styles.tableScroll}`}
+          role="region"
+          aria-labelledby={`pricing-${group.id}-title`}
+          tabIndex={0}
+        >
           <table className={styles.pricingTable} aria-labelledby={`pricing-${group.id}-title`}>
             <thead>
               <tr>
