@@ -1,0 +1,129 @@
+.pricingBlock {
+  margin-bottom: 2rem;
+}
+
+/* Pestaña superior */
+.pricingTitle {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 2rem;
+  border-radius: 12px 12px 0 0;
+  background-color: #4d3971;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Contenedor de la tabla */
+.tableWrapper {
+  overflow: hidden;
+  border: 1px solid #4d3971;
+  border-radius: 0 12px 12px 12px;
+}
+
+/* Tabla */
+.pricingTable {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  text-align: center;
+  color: #321653;
+}
+
+.pricingTable th,
+.pricingTable td {
+  padding: 1rem 0.75rem;
+  vertical-align: middle;
+}
+
+/* Encabezados */
+.pricingTable thead {
+  background-color: #4d3971;
+  color: #fff;
+}
+
+.pricingTable thead th {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Precios */
+.pricingTable tbody td {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Primera columna */
+.pricingTable tbody th {
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Fila Early Bird */
+.earlyBird {
+  background-color: #aaeb75;
+}
+
+/* Fila Regular */
+.pricingTable tbody tr:not(.earlyBird) {
+  background-color: #fff;
+}
+
+/* Variantes de color */
+.members .pricingTitle,
+.members .pricingTable thead {
+  background-color: #4d3971;
+}
+
+.nonMembers .pricingTitle,
+.nonMembers .pricingTable thead {
+  background-color: #194d78;
+}
+
+.newMembership .pricingTitle,
+.newMembership .pricingTable thead {
+  background-color: #00a5d9;
+}
+
+/* Nota Early Bird */
+.earlyBirdNote {
+  display: table;
+  margin-left: auto;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  background-color: #aaeb75;
+  color: #321653;
+  font-size: 1rem;
+}
+
+/* Nota inferior */
+.pricingNotice {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #321653;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  .pricingTitle {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .pricingTable th,
+  .pricingTable td {
+    padding: 0.75rem;
+  }
+
+  .earlyBirdNote {
+    font-size: 0.875rem;
+  }
+
+  .pricingNotice {
+    font-size: 1rem;
+  }
+}
