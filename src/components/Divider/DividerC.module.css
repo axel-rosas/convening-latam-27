@@ -1,0 +1,11 @@
+.divider {
+  width: 100%;
+}
+
+.divider__center {
+  width: 100%;
+  height: 56px;
+  background: url(../../assets/images/decorative/divider-3.png) repeat-x scroll
+    left center;
+  background-size: contain;
+}
