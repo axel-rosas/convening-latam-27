@@ -2,7 +2,8 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
+      <div className={styles.borderTop}></div>
       <div className={styles.divider}></div>
       <nav className={styles.navigation}>
         <div className="container-fluid container-md">

@@ -1,11 +1,18 @@
+.header {
+  position: fixed;
+  height: 100px;
+}
+.borderTop {
+  width: 100%;
+  height: 24px;
+  background: #c2b5ff;
+}
 .divider {
   width: 100vw;
-  height: 64px;
-  border-top: 20px solid #c3b4ff;
-  background-image: url("../../assets/images/decorative/divider-3.png");
-  background-repeat: repeat-x;
-  background-position: center;
-  background-size: auto 100%;
+  height: 54px;
+  background: url("../../assets/images/decorative/divider-1.png") repeat-x left
+    center scroll;
+  background-size: contain;
 }
 .navigation {
   background: #ffcb57;
