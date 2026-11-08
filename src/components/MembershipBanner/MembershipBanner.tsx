@@ -1,4 +1,4 @@
-import { FaArrowRight } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 import logo from "../../assets/images/branding/logo-3.png";
 import styles from "./MembershipBanner.module.css";
 
@@ -13,7 +13,7 @@ const MembershipBanner = () => {
           <h2 id="membership-title">¿Aún no eres socio PCMA?</h2>
           <a className={styles.link} href="#pricing">
             Hazte socio aquí
-            <span className={styles.arrow} aria-hidden="true"><FaArrowRight /></span>
+            <span className={styles.arrow} aria-hidden="true"><FaChevronRight /></span>
           </a>
         </div>
         <p className={styles.description}>

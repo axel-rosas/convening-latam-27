@@ -3,12 +3,12 @@
 }
 .divider__border {
   width: 100%;
-  height: 12px;
+  height: 10px;
   background: #513875;
 }
 .divider__center {
   width: 100%;
-  height: 56px;
+  height: 64px;
   background: url(../../assets/images/decorative/divider-2.png) repeat-x scroll
     left center;
   background-size: contain;

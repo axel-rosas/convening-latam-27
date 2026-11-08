@@ -18,12 +18,40 @@
 }
 .navigation {
   background: #ffcb57;
+  padding-block: 0.125rem;
+}
+.navItems > div {
+  position: relative;
+  padding-inline: 0.75rem;
+}
+.navItems > div + div::before {
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #4d3971;
+  transform: translateY(-50%) rotate(45deg);
+  content: "";
+  pointer-events: none;
 }
 .nav__item {
   text-decoration: none;
   color: #4d3971;
   font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
   transition: color ease-in-out 0.2s;
+}
+
+@media (min-width: 992px) {
+  .nav__item {
+    font-size: 0.8125rem;
+  }
+
+  .navItems > div {
+    padding-inline: 0.625rem;
+  }
 }
 .nav__item:hover {
   color: #00a4a4;

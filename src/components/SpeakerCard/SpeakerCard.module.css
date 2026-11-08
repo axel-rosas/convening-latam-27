@@ -27,8 +27,12 @@
   position: absolute;
   z-index: -1;
   background: var(--pattern-color);
-  mask: url("../../assets/images/decorative/pattern-purple.png") no-repeat center / contain;
-  filter: drop-shadow(1px 0 var(--pattern-color)) drop-shadow(-1px 0 var(--pattern-color)) drop-shadow(0 1px var(--pattern-color));
+  --pattern-mask: url("../../assets/images/decorative/pattern-purple.png");
+  /* Overlay offsets of the same mask to strengthen its existing strokes. */
+  mask-image: var(--pattern-mask), var(--pattern-mask), var(--pattern-mask), var(--pattern-mask), var(--pattern-mask);
+  mask-position: center, calc(50% - 1px) center, calc(50% + 1px) center, center calc(50% - 1px), center calc(50% + 1px);
+  mask-size: contain;
+  mask-repeat: no-repeat;
   content: "";
   pointer-events: none;
 }

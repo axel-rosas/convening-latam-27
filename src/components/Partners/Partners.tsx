@@ -22,12 +22,12 @@ const Partners = () => {
           <img className={styles.logo} src={logo} alt="PCMA Convening LATAM 27, Lima, Perú, April 25–27" />
           <h2 id="sponsors-title">Es presentado gracias a:</h2>
         </div>
-        <div className="container">
+        <div className={`container ${styles.sponsorsGrid}`}>
           <LogoGrid logos={sponsors} featuredLogos={featuredSponsors} label="Sponsors" />
         </div>
       </section>
       {partnerGroups.map((group) => (
-        <section key={group.id} aria-labelledby={`${group.id}-title`}>
+        <section key={group.id} className={group.id === "association-partners" ? styles.association : styles.media} aria-labelledby={`${group.id}-title`}>
           <h2 id={`${group.id}-title`} className={styles.groupTitle}>{group.title}</h2>
           <div className="container">
             <LogoGrid logos={group.logos} label={group.title} />

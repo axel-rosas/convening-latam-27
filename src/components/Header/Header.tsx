@@ -28,7 +28,7 @@ const Header = () => {
       <div className={styles.divider}></div>
       <nav className={styles.navigation} aria-label="Navegación principal">
         <div className="container-fluid container-md">
-          <div className="row justify-content-center">
+          <div className={`row justify-content-center ${styles.navItems}`}>
             <div className="col-auto text-center">
               <span aria-disabled="true" className={styles.nav__item}>
                 Asiste

@@ -4,13 +4,25 @@
 }
 
 .message {
-  padding-block: 1.5rem;
+  padding-block: 1.25rem;
   background: #500e43;
   color: #f3e7e2;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.3;
   text-align: center;
+}
+
+.sponsorsGrid {
+  --logo-panel-width: 840px;
+}
+
+.association {
+  --logo-panel-width: 760px;
+}
+
+.media {
+  --logo-panel-width: 740px;
 }
 
 .message p {
@@ -53,8 +65,8 @@
 
 @media (min-width: 768px) {
   .message {
-    padding-block: 2rem;
-    font-size: 1.125rem;
+    padding-block: 1.75rem;
+    font-size: 1rem;
   }
 
   .lineBreak {
