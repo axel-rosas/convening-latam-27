@@ -1,0 +1,135 @@
+.section {
+  padding-block: 2.5rem;
+  background: #00a4a4;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  color: #fff;
+  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+  font-weight: 700;
+}
+
+.layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.media {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #194d78;
+}
+
+.image,
+.placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: url("../../assets/images/decorative/pattern-cian.png") no-repeat center bottom;
+  background-size: 100% auto;
+  color: #fff;
+  text-align: center;
+}
+
+.placeholder span {
+  padding: 0.75rem 1rem;
+  border: 1px dashed #c2b5ff;
+  border-radius: 8px;
+  background: #194d78;
+}
+
+.pillars {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.pillar {
+  position: relative;
+  display: grid;
+  gap: 0.75rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  border-radius: 24px;
+  color: #4d3971;
+}
+
+.pillar::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 42%;
+  height: 28px;
+  background: url("../../assets/images/decorative/divider-1.png") repeat-x left bottom / auto 28px;
+  content: "";
+  pointer-events: none;
+}
+
+.pillar h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pillar p {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.connect {
+  background: #aaeb75;
+}
+
+.create {
+  background: #ffcb57;
+}
+
+.transform {
+  background: #4d3971;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 0;
+  }
+
+  .media {
+    min-height: 540px;
+    aspect-ratio: auto;
+    border-radius: 28px 0 0 28px;
+  }
+
+  .pillars {
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .pillar {
+    align-content: center;
+    border-radius: 0 24px 24px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pillar {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: 1.5rem;
+  }
+}

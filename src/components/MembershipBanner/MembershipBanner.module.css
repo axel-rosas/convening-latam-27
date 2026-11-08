@@ -1,0 +1,90 @@
+.banner {
+  padding-block: 1.5rem;
+  border-bottom: 8px solid #fff;
+  background: #ffcb57;
+  color: #4d3971;
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.brand {
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  width: min(100%, 300px);
+  margin-inline: auto;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
+.invitation {
+  text-align: center;
+}
+
+.invitation h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 700;
+}
+
+.link {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+  border-radius: 100px;
+  background: #4d3971;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.arrow {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  background: #c2b5ff;
+  color: #4d3971;
+}
+
+.link:hover {
+  background: #321653;
+  color: #fff;
+}
+
+.link:focus-visible {
+  outline: 3px solid #4d3971;
+  outline-offset: 4px;
+}
+
+.description {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: 6px;
+  background: #4d3971;
+  color: #fff;
+  line-height: 1.5;
+}
+
+@media (min-width: 992px) {
+  .content {
+    grid-template-columns: 1fr 1.2fr 1.2fr;
+    gap: 2rem;
+  }
+
+  .brand {
+    width: 100%;
+    max-width: 300px;
+  }
+}
