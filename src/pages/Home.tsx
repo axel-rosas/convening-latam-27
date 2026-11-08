@@ -7,6 +7,7 @@ import EducationalPillars from "../components/EducationalPillars/EducationalPill
 import SustainabilityPillars from "../components/SustainabilityPillars/SustainabilityPillars";
 import Speakers from "../components/Speakers/Speakers";
 import Agenda from "../components/Agenda/Agenda";
+import Partners from "../components/Partners/Partners";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <SustainabilityPillars />
       <Speakers />
       <Agenda />
+      <Partners />
     </main>
   );
 };
