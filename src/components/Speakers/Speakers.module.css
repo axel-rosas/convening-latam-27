@@ -81,9 +81,9 @@
   }
 
   .light .grid {
-    max-width: 880px;
+    max-width: 1040px;
     margin-inline: auto;
-    gap: 4rem;
+    gap: 4.5rem;
   }
 
   .block {

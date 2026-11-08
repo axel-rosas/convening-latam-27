@@ -12,7 +12,7 @@
   --card-text: #fff;
   --portrait-background: #aaeb75;
   --pattern-color: #194d78;
-  padding-bottom: 54px;
+  padding-bottom: 64px;
 }
 
 .light {
@@ -28,31 +28,32 @@
   z-index: -1;
   background: var(--pattern-color);
   mask: url("../../assets/images/decorative/pattern-purple.png") no-repeat center / contain;
+  filter: drop-shadow(1px 0 var(--pattern-color)) drop-shadow(-1px 0 var(--pattern-color)) drop-shadow(0 1px var(--pattern-color));
   content: "";
   pointer-events: none;
 }
 
 .dark::before {
   bottom: 0;
-  left: 10%;
-  width: 80%;
-  height: 80px;
+  left: 4%;
+  width: 92%;
+  height: 100px;
 }
 
 .light::before,
 .light::after {
   top: 50%;
-  width: 100px;
-  height: 52px;
+  width: 120px;
+  height: 62px;
 }
 
 .light::before {
-  left: -64px;
+  left: -76px;
   transform: translateY(-50%) rotate(90deg);
 }
 
 .light::after {
-  right: -64px;
+  right: -76px;
   transform: translateY(-50%) rotate(-90deg);
 }
 
