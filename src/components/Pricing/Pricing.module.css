@@ -1,16 +1,21 @@
+.pricing {
+  max-width: 859px;
+  padding-block: 2.5rem;
+}
+
 .pricingBlock {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Pestaña superior */
 .pricingTitle {
   display: inline-block;
   margin: 0;
-  padding: 0.75rem 2rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 12px 12px 0 0;
   background-color: #4d3971;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -34,7 +39,7 @@
 /* Tabla */
 .pricingTable {
   width: 100%;
-  min-width: 850px;
+  min-width: 800px;
   border-collapse: collapse;
   text-align: center;
   color: #321653;
@@ -42,7 +47,7 @@
 
 .pricingTable th,
 .pricingTable td {
-  padding: 1rem 0.75rem;
+  padding: 0.75rem 0.5rem;
   vertical-align: middle;
 }
 
@@ -53,22 +58,23 @@
 }
 
 .pricingTable thead th {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 /* Precios */
 .pricingTable tbody td {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 /* Primera columna */
 .pricingTable tbody th {
   text-align: left;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 /* Fila Early Bird */
@@ -101,39 +107,25 @@
 .earlyBirdNote {
   display: table;
   margin-left: auto;
-  padding: 0.5rem 2rem;
+  padding: 0.375rem 1.25rem;
   border-radius: 50px;
   background-color: #aaeb75;
   color: #321653;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 /* Nota inferior */
 .pricingNotice {
-  margin-top: 2.5rem;
+  margin: 2rem 0 0;
   text-align: center;
   color: #321653;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 /* Responsive */
-@media (max-width: 767.98px) {
-  .pricingTitle {
-    padding: 0.75rem 1.25rem;
-    font-size: 1rem;
-  }
-
-  .pricingTable th,
-  .pricingTable td {
-    padding: 0.75rem;
-  }
-
-  .earlyBirdNote {
-    font-size: 0.875rem;
-  }
-
-  .pricingNotice {
-    font-size: 1rem;
+@media (min-width: 992px) {
+  .pricing {
+    padding-block: 2.5rem 3rem;
   }
 }

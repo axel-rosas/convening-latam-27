@@ -3,17 +3,11 @@
     scroll;
   background-size: cover;
 
-  @media (min-width: 576px) {
-    min-height: 90vh;
-  }
 }
 
 .hero__filter {
   width: 100%;
   padding-top: max(120px, calc(var(--header-height, 120px) + 16px));
-  @media (min-width: 576px) {
-    min-height: 90vh;
-  }
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 1) 30%,
@@ -22,16 +16,19 @@
   @media (min-width: 992px) {
     background: linear-gradient(
       to right,
-      rgba(255, 255, 255, 1) 30%,
-      rgba(255, 255, 255, 0)
+      rgba(255, 255, 255, 1) 32%,
+      rgba(255, 255, 255, 0.75) 45%,
+      rgba(255, 255, 255, 0) 68%
     );
   }
 }
 
 .hero__logo {
   width: 80%;
+  height: auto;
   @media (min-width: 992px) {
     width: 40%;
+    max-width: 520px;
   }
 }
 
@@ -39,9 +36,17 @@
   background: rgba(255, 255, 255, 0.7);
   border-radius: 24px;
   font-size: 1.2rem;
+  color: #4d3971;
   @media (min-width: 992px) {
     background: rgba(255, 255, 255, 0.5);
-    max-width: 70%;
+    max-width: 65%;
     border-radius: 0 24px 24px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero,
+  .hero__filter {
+    min-height: clamp(560px, 48.75vw, 760px);
   }
 }

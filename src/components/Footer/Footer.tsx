@@ -14,9 +14,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.divider}></div>
       <div className={styles.footer__top}>
-        <div className="container">
+        <div className={`container ${styles.container}`}>
           <div className="row">
-            <div className="col-12 col-lg-4 d-flex flex-column align-items-center gap-4 py-5">
+            <div className={`col-12 col-lg-4 d-flex flex-column align-items-center ${styles.contact}`}>
               <img src={pcma.logo} alt="" className={styles.footer__logo} />
               <div
                 className="d-flex flex-column align-items-center"
@@ -34,7 +34,7 @@ const Footer = () => {
                   <a href="tel:+13124237262">+1 312-423-7262</a> (main)
                 </span>
               </div>
-              <div>
+              <div className={styles.socials}>
                 <a href="" aria-label="PCMA en Facebook">
                   <FaFacebookF aria-hidden="true" />
                 </a>
@@ -53,21 +53,20 @@ const Footer = () => {
               </div>
             </div>
             <div
-              className={`col-12 col-lg-8 px-5 pt-5 pb-4 ${styles.footer__links}`}
+              className={`col-12 col-lg-8 ${styles.footer__links}`}
             >
               {footerLinks.map((group) => (
-                <section className="mb-3" key={group.title}>
-                  <h3 className={`mb-3 ${styles.group__title}`}>
+                <section className={styles.group} key={group.title}>
+                  <h3 className={styles.group__title}>
                     {group.title}
                   </h3>
                   <div
-                    className={`d-flex flex-wrap py-2 ${styles.group__links}`}
+                    className={`d-flex flex-wrap ${styles.group__links}`}
                   >
                     {group.links.map((link) => (
                       <a
                         key={link.href}
                         href={link.href}
-                        className=" me-4 mb-3"
                       >
                         {link.label}
                       </a>
@@ -81,7 +80,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer__bottom}>
-        <div className="container">
+        <div className={`container ${styles.container}`}>
           <div className="row">
             <div className="col-12 col-lg-auto py-3 d-flex justify-content-center gap-3 flex-wrap">
               <img
