@@ -24,7 +24,7 @@ const Footer = () => {
                 <span>200 E. Randolph St.</span>
                 <span>Suite 7150</span>
                 <span>Chicago, IL 60601</span>
-                <span>United State</span>
+                <span>United States</span>
               </div>
               <div className="d-flex flex-column align-items-center">
                 <span>

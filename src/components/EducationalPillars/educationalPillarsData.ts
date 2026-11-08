@@ -21,6 +21,6 @@ export const educationalPillarsData: EducationalPillar[] = [
     id: "transform",
     title: "Transformar",
     description:
-      "Herramientas, puntos de vista y conversaciones que ayudan a evolucionar la industria: innovación, y liderazgo aplicados al futuro de los eventos.",
+      "Herramientas, puntos de vista y conversaciones que ayudan a evolucionar la industria: innovación y liderazgo aplicados al futuro de los eventos.",
   },
 ];

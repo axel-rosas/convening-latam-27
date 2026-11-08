@@ -26,13 +26,13 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Communuty & Events",
+    title: "Community & Events",
     links: [
       { label: "20 in their Twenties", href: "a" },
       { label: "Chapters & Local Connections", href: "b" },
       { label: "Membership: Join PCMA", href: "c" },
       { label: "Renew Membership", href: "d" },
-      { label: "CEMA Summint", href: "e" },
+      { label: "CEMA Summit", href: "e" },
       { label: "Convene 4 Climate", href: "f" },
       { label: "Convening APAC", href: "g" },
       { label: "Convening EMEA", href: "h" },

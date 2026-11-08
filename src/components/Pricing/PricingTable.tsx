@@ -22,8 +22,8 @@ const PricingTable = ({ group }: PricingTableProps) => {
               <tr>
                 <th scope="col">Tier</th>
                 {group.categories.map((category) => (
-                  <th key={category} scope="col">
-                    {category}
+                  <th key={category.id} scope="col">
+                    {category.label}
                   </th>
                 ))}
               </tr>
@@ -38,7 +38,7 @@ const PricingTable = ({ group }: PricingTableProps) => {
                   <th scope="row">{tier.name}</th>
 
                   {tier.prices.map((price, index) => (
-                    <td key={index}>{price}</td>
+                    <td key={group.categories[index].id}>{price}</td>
                   ))}
                 </tr>
               ))}

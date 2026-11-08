@@ -5,11 +5,16 @@ export interface PricingTier {
   earlyBird?: boolean;
 }
 
+export interface PricingCategory {
+  id: string;
+  label: string;
+}
+
 export interface PricingGroup {
   id: string;
   title: string;
   variant: "members" | "nonMembers" | "newMembership";
-  categories: string[];
+  categories: PricingCategory[];
   tiers: PricingTier[];
 }
 
@@ -19,11 +24,11 @@ export const pricingData: PricingGroup[] = [
     title: "Socios PCMA",
     variant: "members",
     categories: [
-      "Organizador | Estratega de eventos empresariales",
-      "Proveedor de eventos empresariales | Socio de la industria",
-      "Profesorado o Personal académico**",
-      "Next Gen**",
-      "Estudiantes**",
+      { id: "members-category-1", label: "Organizador | Estratega de eventos empresariales" },
+      { id: "members-category-2", label: "Proveedor de eventos empresariales | Socio de la industria" },
+      { id: "members-category-3", label: "Profesorado o Personal académico**" },
+      { id: "members-category-4", label: "Next Gen**" },
+      { id: "members-category-5", label: "Estudiantes**" },
     ],
     tiers: [
       {
@@ -44,11 +49,11 @@ export const pricingData: PricingGroup[] = [
     title: "No Socios PCMA",
     variant: "nonMembers",
     categories: [
-      "Organizador | Estratega de eventos empresariales",
-      "Proveedor de eventos empresariales | Socio de la industria",
-      "Profesorado o Personal académico",
-      "Next Gen**",
-      "Next Gen**",
+      { id: "non-members-category-1", label: "Organizador | Estratega de eventos empresariales" },
+      { id: "non-members-category-2", label: "Proveedor de eventos empresariales | Socio de la industria" },
+      { id: "non-members-category-3", label: "Profesorado o Personal académico" },
+      { id: "non-members-category-4", label: "Next Gen**" },
+      { id: "non-members-category-5", label: "Next Gen**" },
     ],
     tiers: [
       {
@@ -69,11 +74,11 @@ export const pricingData: PricingGroup[] = [
     title: "Nueva Membresía PCMA",
     variant: "newMembership",
     categories: [
-      "Organizador | Estratega de eventos empresariales",
-      "Proveedor de eventos empresariales | Socio de la industria",
-      "Profesorado o Personal académico",
-      "Next Gen**",
-      "Estudiantes",
+      { id: "new-membership-category-1", label: "Organizador | Estratega de eventos empresariales" },
+      { id: "new-membership-category-2", label: "Proveedor de eventos empresariales | Socio de la industria" },
+      { id: "new-membership-category-3", label: "Profesorado o Personal académico" },
+      { id: "new-membership-category-4", label: "Next Gen**" },
+      { id: "new-membership-category-5", label: "Estudiantes" },
     ],
     tiers: [
       {

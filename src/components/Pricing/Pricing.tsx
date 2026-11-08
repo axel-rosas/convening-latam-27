@@ -14,7 +14,7 @@ const Pricing = () => {
 
       <p className={styles.pricingNotice}>
           ¿Quieres asistir como Profesor o Estudiante? <br />
-          Por favor comunicate a info@conveninglatam.org para obtener acceso a
+          Por favor comunícate a info@conveninglatam.org para obtener acceso a
           la tarifa
       </p>
     </section>
