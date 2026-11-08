@@ -1,0 +1,225 @@
+.section {
+  padding-block: 2rem 3rem;
+  background: #fff;
+  color: #4d3971;
+  scroll-margin-top: 120px;
+}
+
+.intro {
+  display: grid;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.brand {
+  width: min(100%, 280px);
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overview > p:first-child {
+  margin: 0 0 1.5rem;
+  font-weight: 700;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  border: 2px solid #4d3971;
+  border-radius: 100px;
+  background: #c2b5ff;
+  color: #4d3971;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button[href]:hover {
+  text-decoration: underline;
+}
+
+.button:focus-visible {
+  outline: 3px solid #4d3971;
+  outline-offset: 4px;
+}
+
+.arrow {
+  display: grid;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  background: #4d3971;
+  color: #c2b5ff;
+  font-size: 1.5rem;
+}
+
+.title {
+  margin: 2rem 0 0.75rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.notice {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.days {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+.featured,
+.schedule {
+  min-width: 0;
+}
+
+.dayHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  min-height: 44px;
+  place-items: center;
+  border-radius: 12px;
+  background: #4d3971;
+  color: #ffcb57;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.date,
+.subtitle,
+.activityGroup h4 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.subtitle {
+  color: #8d79e8;
+}
+
+.activityGroup + .activityGroup {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ffcb57;
+}
+
+.activityGroup h4 {
+  margin-bottom: 0.5rem;
+}
+
+.featuredList,
+.scheduleList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featuredList li {
+  padding-block: 0.125rem;
+}
+
+.scheduleList {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.scheduleRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 1rem;
+  line-height: 1.4;
+}
+
+.scheduleRow small {
+  font-size: 0.75em;
+}
+
+@media (min-width: 576px) {
+  .featuredActivities {
+    margin-left: 3.5rem;
+  }
+
+  .scheduleRow {
+    grid-template-columns: 140px minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .overview {
+    padding-top: 1rem;
+    text-align: right;
+  }
+
+  .days {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .featured {
+    grid-column: 1 / -1;
+  }
+
+  .scheduleList {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .days {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .featured {
+    grid-column: auto;
+  }
+
+  .schedule .dayHeader {
+    margin-bottom: 2.5rem;
+  }
+
+  .scheduleList {
+    gap: 3rem;
+  }
+
+  .scheduleRow {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    min-height: 2rem;
+  }
+}
