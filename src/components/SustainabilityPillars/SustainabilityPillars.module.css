@@ -1,0 +1,262 @@
+.section {
+  padding-top: 6.5rem;
+  overflow: hidden;
+  background: #fff url("../../assets/images/decorative/pattern-cian.png") no-repeat center top;
+  background-size: 220px auto;
+  color: #205943;
+}
+
+.content {
+  padding-bottom: 2.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  color: #006c50;
+  font-size: clamp(1.5rem, 3vw, 2.75rem);
+  font-weight: 700;
+}
+
+.headingIcon {
+  display: flex;
+  flex: 0 0 3.5rem;
+}
+
+.icon,
+.iconPlaceholder {
+  display: block;
+  flex: 0 0 2.5rem;
+  width: 2.5rem;
+  height: 4rem;
+}
+
+.icon {
+  object-fit: contain;
+}
+
+.iconPlaceholder {
+  display: grid;
+  place-items: center;
+  border: 1px dashed currentColor;
+  border-radius: 4px;
+  padding: 0.2rem;
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.headingIcon > * {
+  width: 3.5rem;
+  height: 5rem;
+  flex-basis: 3.5rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  min-width: 0;
+  padding: 1.75rem;
+  border-radius: 28px;
+}
+
+.global {
+  background: #205943;
+  color: #fff;
+  --rule-color: #ffcb57;
+}
+
+.transformation {
+  background: #ffcb57;
+  color: #4d3971;
+  --rule-color: #4d3971;
+}
+
+.network {
+  background: #4d3971;
+  color: #ffcb57;
+  --rule-color: #ffcb57;
+}
+
+.cardHeading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cardHeading h3 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.rule {
+  position: relative;
+  height: 2px;
+  margin-block: 1.5rem;
+  background: var(--rule-color);
+}
+
+.rule::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: var(--rule-color);
+  content: "";
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.statement {
+  margin: 2rem 0;
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.statement span {
+  color: #4d3971;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 0 0 0 1rem;
+  border: 2px solid currentColor;
+  border-radius: 100px;
+  background: #f0e9de;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register {
+  color: #ac2050;
+}
+
+.details {
+  color: #4d3971;
+}
+
+.arrow {
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  background: #4d3971;
+  color: #f0e9de;
+  font-size: 1.5rem;
+}
+
+.register .arrow {
+  background: #ac2050;
+}
+
+.action:disabled {
+  cursor: not-allowed;
+}
+
+.action:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+.action[href]:hover {
+  text-decoration: underline;
+}
+
+.notice {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.divider {
+  height: 54px;
+  background: #205943 url("../../assets/images/decorative/divider-4.png") repeat-x left center / auto 54px;
+}
+
+@media (min-width: 576px) {
+  .actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 7rem;
+    background-size: 300px auto;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    padding: 1.5rem;
+  }
+
+  .cardHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    padding: 2rem;
+  }
+
+  .cardHeading {
+    flex-direction: row;
+    align-items: center;
+    min-height: 5rem;
+  }
+
+  .rule {
+    width: calc(100% + 3.5rem);
+  }
+
+  .statement {
+    margin-block: 2.5rem;
+  }
+
+  .action {
+    gap: 1rem;
+    font-size: 1.25rem;
+  }
+}
