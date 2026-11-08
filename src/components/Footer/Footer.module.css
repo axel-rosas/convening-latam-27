@@ -1,0 +1,58 @@
+.divider {
+  width: 100%;
+  height: 50px;
+  background: url(../../assets//images/decorative/divider-5.png) repeat-x scroll
+    left top;
+  background-size: contain;
+}
+.footer a {
+  color: #f3e7e2;
+}
+.footer__top {
+  background: #500e43;
+  color: #f3e7e2;
+}
+.footer__logo {
+  width: 100%;
+  max-width: 200px;
+}
+.footer__links {
+  background: #6f004f;
+}
+.group__title {
+  text-transform: uppercase;
+}
+.group__links {
+  border-top: 1px solid #f3e7e2;
+}
+.footer__links a {
+  text-decoration: none;
+  transition: color ease-in-out 0.2s;
+}
+
+.footer__links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  background: #ffffff;
+}
+.footer__icon {
+  height: 35px;
+}
+.footer__bottom a {
+  color: #646363;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 10px;
+  border-right: 1px solid #646363;
+  transition: color ease-in-out 0.2s;
+}
+.footer__bottom a:last-child {
+  border: none;
+}
+
+.footer__bottom a:hover {
+  color: #500e43;
+}

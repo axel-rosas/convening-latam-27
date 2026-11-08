@@ -1,0 +1,47 @@
+export const footerLinks = [
+  {
+    title: "About",
+    links: [
+      { label: "About PCMA", href: "a" },
+      { label: "Advertising & Sponsorship", href: "b" },
+      { label: "Job Search/Career Center", href: "c" },
+      { label: "PCMA Careers", href: "d" },
+      { label: "PCMA Leadership Communication", href: "e" },
+      { label: "PCMA News & Press Releases", href: "f" },
+    ],
+  },
+  {
+    title: "Education & Resources",
+    links: [
+      { label: "Ascent: Promoting Inclusivity in Business Events", href: "a" },
+      { label: "Convene Podcast", href: "b" },
+      { label: "Courses & Certifications", href: "c" },
+      { label: "PCMA Institute", href: "d" },
+      { label: "Research & Education Resources", href: "e" },
+      { label: "Scholarships & Opportunities", href: "f" },
+      { label: "Submit Your Session Idea", href: "g" },
+      { label: "Subscribe to Newsletters", href: "h" },
+      { label: "Upcoming Webinars", href: "i" },
+      { label: "Videos, Webinars & CE Library", href: "j" },
+    ],
+  },
+  {
+    title: "Communuty & Events",
+    links: [
+      { label: "20 in their Twenties", href: "a" },
+      { label: "Chapters & Local Connections", href: "b" },
+      { label: "Membership: Join PCMA", href: "c" },
+      { label: "Renew Membership", href: "d" },
+      { label: "CEMA Summint", href: "e" },
+      { label: "Convene 4 Climate", href: "f" },
+      { label: "Convening APAC", href: "g" },
+      { label: "Convening EMEA", href: "h" },
+      { label: "Convening LATAM", href: "i" },
+      { label: "Convening Leaders", href: "j" },
+      { label: "Business Events Summit", href: "k" },
+      { label: "Business Events Industries Week", href: "l" },
+      { label: "PCMA Foundation Fashion Show", href: "m" },
+      { label: "Visionary Awards", href: "n" },
+    ],
+  },
+];
