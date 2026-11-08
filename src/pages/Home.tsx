@@ -5,6 +5,7 @@ import Pricing from "../components/Pricing/Pricing";
 import MembershipBanner from "../components/MembershipBanner/MembershipBanner";
 import EducationalPillars from "../components/EducationalPillars/EducationalPillars";
 import SustainabilityPillars from "../components/SustainabilityPillars/SustainabilityPillars";
+import Speakers from "../components/Speakers/Speakers";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <MembershipBanner />
       <EducationalPillars />
       <SustainabilityPillars />
+      <Speakers />
     </main>
   );
 };

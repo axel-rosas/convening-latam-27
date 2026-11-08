@@ -1,0 +1,97 @@
+.section {
+  overflow: hidden;
+  scroll-margin-top: 120px;
+}
+
+.block {
+  padding-block: 2.5rem;
+}
+
+.dark {
+  background: #aaeb75;
+  color: #194d78;
+}
+
+.light {
+  padding-block: 4rem;
+  background: #194d78;
+  color: #f3e7e2;
+}
+
+.title {
+  margin: 0 0 2rem;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  min-width: 0;
+}
+
+.divider {
+  height: 54px;
+  background: #205943 url("../../assets/images/decorative/divider-4.png") repeat-x left center / auto 54px;
+}
+
+.bottomDivider {
+  height: 54px;
+  background: #00a4a4 url("../../assets/images/decorative/divider-2.png") repeat-x left center / auto 54px;
+}
+
+@media (min-width: 576px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .light .grid {
+    gap: 3rem;
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dark .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .light .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .light {
+    padding-block: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .dark .grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .light .grid {
+    max-width: 880px;
+    margin-inline: auto;
+    gap: 4rem;
+  }
+
+  .block {
+    padding-block: 3rem;
+  }
+
+  .light {
+    padding-block: 5rem;
+  }
+}
