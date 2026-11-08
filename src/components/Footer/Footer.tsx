@@ -19,14 +19,14 @@ const Footer = () => {
             <div className="col-12 col-lg-4 d-flex flex-column align-items-center gap-4 py-5">
               <img src={pcma.logo} alt="" className={styles.footer__logo} />
               <div
-                className={`d-flex flex-column align-items-center ${styles.footer__address}`}
+                className="d-flex flex-column align-items-center"
               >
                 <span>200 E. Randolph St.</span>
                 <span>Suite 7150</span>
                 <span>Chicago, IL 60601</span>
                 <span>United State</span>
               </div>
-              <div className="footer__contacto d-flex flex-column align-items-center">
+              <div className="d-flex flex-column align-items-center">
                 <span>
                   <a href="tel:+18778277262">+1 877-827-7262</a> (toll-free)
                 </span>
@@ -34,21 +34,21 @@ const Footer = () => {
                   <a href="tel:+13124237262">+1 312-423-7262</a> (main)
                 </span>
               </div>
-              <div className="footer__rrss">
-                <a href="" className="rrss__item">
-                  <FaFacebookF />
+              <div>
+                <a href="" aria-label="PCMA en Facebook">
+                  <FaFacebookF aria-hidden="true" />
                 </a>
-                <a href="" className="rrss__item">
-                  <FaXTwitter />
+                <a href="" aria-label="PCMA en X">
+                  <FaXTwitter aria-hidden="true" />
                 </a>
-                <a href="" className="rrss__item">
-                  <FaLinkedinIn />
+                <a href="" aria-label="PCMA en LinkedIn">
+                  <FaLinkedinIn aria-hidden="true" />
                 </a>
-                <a href="" className="rrss__item">
-                  <FaInstagram />
+                <a href="" aria-label="PCMA en Instagram">
+                  <FaInstagram aria-hidden="true" />
                 </a>
-                <a href="" className="rrss__item">
-                  <FaYoutube />
+                <a href="" aria-label="PCMA en YouTube">
+                  <FaYoutube aria-hidden="true" />
                 </a>
               </div>
             </div>

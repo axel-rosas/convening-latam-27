@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  height: 100px;
+  height: auto;
 }
 .borderTop {
   width: 100%;

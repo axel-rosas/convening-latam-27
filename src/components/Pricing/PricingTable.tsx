@@ -8,11 +8,11 @@ interface PricingTableProps {
 const PricingTable = ({ group }: PricingTableProps) => {
   return (
     <div className={`${styles.pricingBlock} ${styles[group.variant]}`}>
-      <h3 className={styles.pricingTitle}>{group.title}</h3>
+      <h3 id={`pricing-${group.id}-title`} className={styles.pricingTitle}>{group.title}</h3>
 
       <div className={styles.tableWrapper}>
         <div className="table-responsive">
-          <table className={styles.pricingTable}>
+          <table className={styles.pricingTable} aria-labelledby={`pricing-${group.id}-title`}>
             <thead>
               <tr>
                 <th scope="col">Tier</th>

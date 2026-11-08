@@ -4,13 +4,13 @@ import styles from "./Speakers.module.css";
 
 const Speakers = () => {
   return (
-    <section id="speakers" className={styles.section} aria-labelledby="keynotes-title">
+    <section id="speakers" className={styles.section} aria-label="Keynotes y ponentes">
       {speakerBlocks.map((block) => (
         <div key={block.id}>
           {block.dividerBefore && <div className={styles.divider} aria-hidden="true" />}
           <div className={`${styles.block} ${styles[block.variant]}`}>
             <div className="container">
-              {block.title && <h2 id="keynotes-title" className={styles.title}>{block.title}</h2>}
+              {block.title && <h2 id={`speakers-${block.id}-title`} className={styles.title}>{block.title}</h2>}
               <ul className={styles.grid}>
                 {block.speakers.map((speaker) => (
                   <li key={speaker.id} className={styles.item}>

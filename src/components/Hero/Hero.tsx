@@ -6,6 +6,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={`pb-4 ${styles.hero__filter}`}>
         <div className="container">
+          <h1 className="visually-hidden">PCMA Convening LATAM 27</h1>
           <img src={logo} alt="" className={styles.hero__logo} />
           <div className={`mt-3 p-4 ${styles.hero__text}`}>
             <p>
