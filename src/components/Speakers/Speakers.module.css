@@ -40,12 +40,14 @@
 
 .divider {
   height: 54px;
-  background: #205943 url("../../assets/images/decorative/divider-4.png") repeat-x left center / auto 54px;
+  background: #205943 url("../../assets/images/decorative/divider-4.png")
+    repeat-x left center / auto 54px;
 }
 
 .bottomDivider {
   height: 54px;
-  background: #00a4a4 url("../../assets/images/decorative/divider-2.png") repeat-x left center / auto 54px;
+  background: #00a4a4 url("../../assets/images/decorative/divider-2.png")
+    repeat-x left center / auto 54px;
 }
 
 @media (min-width: 576px) {
@@ -67,6 +69,7 @@
 
   .light .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4rem;
   }
 
   .light {
@@ -83,7 +86,7 @@
   .light .grid {
     max-width: 1040px;
     margin-inline: auto;
-    gap: 4.5rem;
+    gap: 6.5rem;
   }
 
   .block {

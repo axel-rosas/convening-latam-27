@@ -47,17 +47,17 @@
 .light::before,
 .light::after {
   top: 50%;
-  width: 120px;
-  height: 62px;
+  width: 80px;
+  height: 42px;
 }
 
 .light::before {
-  left: -76px;
+  left: -48px;
   transform: translateY(-50%) rotate(90deg);
 }
 
 .light::after {
-  right: -76px;
+  right: -48px;
   transform: translateY(-50%) rotate(-90deg);
 }
 
@@ -134,4 +134,20 @@
 .details .role {
   margin-bottom: 0.25rem;
   font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .light::before,
+  .light::after {
+    width: 120px;
+    height: 62px;
+  }
+
+  .light::before {
+    left: -76px;
+  }
+
+  .light::after {
+    right: -76px;
+  }
 }

@@ -8,7 +8,11 @@ interface SpeakerCardProps {
   monochrome?: boolean;
 }
 
-const SpeakerCard = ({ speaker, variant, monochrome = false }: SpeakerCardProps) => {
+const SpeakerCard = ({
+  speaker,
+  variant,
+  monochrome = false,
+}: SpeakerCardProps) => {
   return (
     <article className={`${styles.card} ${styles[variant]}`}>
       <div className={styles.surface}>
